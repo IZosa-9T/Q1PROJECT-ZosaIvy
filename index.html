@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cotton bun</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+
+  <style>
+
+      *{
+          box-sizing: border-box;
+          color: #524942;
+      }
+
+      body {
+        font-family: "Short Stack", cursive;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top:5%;
+        margin-bottom: 5%;
+        background-color: #F3F0EE;
+        background-image:url(BGimg.png);
+      }
+
+      .header {
+        text-align: center;
+        padding: 20px;
+        background-image: url(bunbun.png);
+        background-size: 800px 125px;
+      }
+
+      .row {
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+      }
+
+      .column {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding: 16px;
+      }
+
+      .column.side {
+        background-color: #e8e3df;
+        flex: 1;
+      }
+
+      .column.middle {
+        background-color: #e8e3df;
+        flex: 3;
+      }
+
+      ul {
+        list-style: none;
+        justify-content: space-between;
+      }
+
+      li {
+        display: inline;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #524942;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #E1D7CE;
+        text-align: center;
+        padding: 5px 5px;
+        text-decoration: none;
+
+      }
+
+      .topnav a:hover {
+        background-color: rgb(232, 227, 223, 0.5);
+        color: #524942;
+        border-radius: 20px;
+      }
+
+      .middle {
+        padding-left: 70px;
+        padding-right:70px;
+        text-align: center;
+      }
+
+      .middle .item {
+        background-color:#FFFFFF;
+        display: inline-block;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom:20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+
+      img {
+        width: 110px;
+      }
+
+      .form {
+        background-color: #F1F1F1;
+        text-align: center;
+        padding: 20px;
+      }
+
+
+      hr {
+        height: 5px;
+        background-color: rgb(82, 73, 66, 0.5);
+        border-color: rgb(0, 0, 0, 0);
+        border-radius: 5px;
+      }
+
+      .bottom {
+        background-color:#524942;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius:5px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .title {
+        background-color: rgb(82, 73, 66, 0.5);
+        color: #E8E3DF;
+        border-radius: 5px;
+      }
+
+      input {
+        border-radius: 10px;
+        border-color: rgb(0, 0, 0, 0);
+      }
+
+      .footer {
+        background-color:#524942;
+        padding: 3px;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 30px;
+      }
+
+      .submit {
+        background-color:#524942;
+        color: #E8E3DF;
+        font-family: "Short Stack", cursive;
+      }
+
+      .submit:hover {
+        background-color:rgb(82, 73, 66, 0.5);
+        color: #E8E3DF;
+        font-family: "Short Stack", cursive;
+      }
+
+      .price {
+        font-size:10px;
+        padding: 0px;
+        color: rgb(82, 73, 66, 0.5);
+      }
+
+
+
+  </style>
+
+</head>
+
+<body>
+
+    <div class=topnav>
+
+      <ul class="navbar" id="top">
+        <li><img src="logo bunny.png" alt="logo" style="width: 35px; float: left;"></li>
+        <li><a href="#bestseller">bestseller</a></li>
+        <li><a href="#shop">shop</a></li>
+        <li><a href="#signup" style="float: right;">login | sign up</a></li>
+      </ul>
+
+    </div>
+
+    <div class="header">
+      
+      <h1><i>cotton buns !</i></h1>
+
+    </div>
+
+    <div class="row" id="bestseller">
+
+          <div class="column side">
+
+            <h2>Our Shop !</h2>
+
+            <hr style="height: 3px;">
+
+            <p>Welcome to cotton buns!! We sell bunny stuffed animals with a variety of different styles. This would be a great gift for children, friends, family, etc. Buy now!</p>
+
+          </div>
+
+          <div class="column middle">
+
+            <hr>
+
+            <h2 class="title">Best Sellers . . .</h2>
+
+            <div class = "item" style="float: left;">
+              <img src="carrot bunny.png" alt="product" style="width: 100px;">
+              <div class="name">
+                <p>carrot</p>
+                <p class="price">190₱</p>
+              </div>
+            </div>
+
+            <div class = "item">
+              <img src="sleepy bunny.png"  alt="product" style="width: 100px;">
+              <div class="name">
+                <p>sleepy</p>
+                <p class="price">319₱</p>
+              </div>
+            </div>
+
+            <div class = "item" style="float: right">
+              <img src="jungle bunny.png"  alt="product" style="width: 100px;">
+              <div class="name">
+                <p>adventurer</p>
+                <p class="price">432₱</p>
+              </div>
+            </div>
+            <hr>
+
+          </div>
+
+    </div>
+
+    <div class="row" id="shop">
+
+          <div class="column middle">
+            <h2 class="title">Our Products . . .</h2>
+
+            <div class = "item">
+              <img src="hua cheng bunny.png" alt="hua cheng bunny">
+              <div class="name">
+                <p>hua cheng</p>
+                <p class="price">683₱</p>
+              </div>
+            </div>
+
+            <div class = "item">
+              <img src="xie lian bunny.png"  alt="product">
+              <div class="name">
+                <p>xie lian</p>
+                <p class="price">674₱</p>
+              </div>
+            </div>
+
+            <div class = "item">
+              <img src="cold bunny.png"  alt="product">
+              <div class="name">
+                <p>winter</p>
+                <p class="price">299₱</p>
+              </div>
+            </div>
+
+            <div class = "item">
+              <img src="fishy bunny.png"  alt="product">
+              <div class="name">
+                <p>fishy</p>
+                <p class="price">190₱</p>
+              </div>
+            </div>
+
+            <div class = "item">
+              <img src="study bunny.png"  alt="product">
+              <div class="name">
+                <p>nerd</p>
+                <p class="price">309₱</p>
+              </div>
+            </div>
+
+            <div class = "item">
+              <img src="carrot bunny.png"  alt="product">
+              <div class="name">
+                <p>carrot</p>
+                <p class="price">190₱</p>
+              </div>
+            </div>
+
+            <div class = "item">
+              <img src="jungle bunny.png"  alt="product">
+              <div class="name">
+                <p>adventurer</p>
+                <p class="price">439₱</p>
+              </div>
+            </div>
+
+            <div class = "item">
+              <img src="sleepy bunny.png"  alt="product">
+              <div class="name">
+                <p>sleepy</p>
+                <p class="price">319₱</p>
+              </div>
+            </div>
+
+          </div>
+    </div>
+
+    <div class=row id="signup">
+        <div class="column middle">
+          <form>
+            <h2 class="title">registration</h2>
+
+              <hr>  <br/>
+
+            <label>username:</label>
+            <input type="text" name="fname">
+
+              <br/>
+              <br/>
+
+            <label>password:</label>
+            <input type="text" name="password">
+
+              <br/>
+              <br/>
+
+            <input type="submit" name="submit" class="submit">
+          </form>
+
+              <hr>
+
+        </div>
+
+        <div class="column side">
+          <h2>Sign Up/Log in here!!</h2>
+
+          <hr style="height: 3px;">
+
+          <p>Everything is so adorable and for reasonable prices! Ready to order yet? Sign up or login here!</p>
+        </div>
+    </div>
+
+    <div class=bottom>
+      <br/>
+    </div>
+
+    <div class="footer" >
+      <h3 style="color: #E8E3DF;">Thank you for visiting our shop !! <a href="#top" style="color: #E8E3DF;">click here to go back up<a></h3>
+    </div>
+
+</body>
+</html>
